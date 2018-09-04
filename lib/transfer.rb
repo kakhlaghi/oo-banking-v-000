@@ -27,6 +27,7 @@ class Transfer
     end
      if sender.valid?
         @status = "complete"
+<<<<<<< HEAD
      else
         @status = "rejected"
         return "Transaction rejected. Please check your account balance."
@@ -43,4 +44,14 @@ class Transfer
   
   
   
+=======
+      else
+        return "Transaction rejected. Please check your account balance."
+        @status = "rejected"
+      end
+    
+  end
+  
+  
+>>>>>>> c1dd84acb4138cfedf1ad49bfc11900813bb6b6c
 end
